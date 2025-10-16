@@ -1,0 +1,128 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh;
+    margin: 0;
+    padding-top: 60px; 
+}
+
+
+.card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 650px;
+}
+
+
+.card h2 {
+    color:#000000;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-weight: bold;
+    min-width: 90px;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.row.single {
+    flex-wrap: nowrap;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    margin-left: 8px;
+}
+
+button {
+    background-color:#78151d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #d36871;
+}
+
+.profile-card {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-card h1 {
+    color: #78151d;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.profile-card h2 {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    margin: 6px 0;
+    color: #121111;
+}
+
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    background-color:#78151d;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.back-link:hover {
+    background-color:  #d36871;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Output</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card profile-card">
+        <h1>Social Media Profile Details</h1>
+        <h2>{{ firstname }} {{ lastname }}</h2>
+
+        <div class="profile-info">
+            <p><strong>Sex:</strong> {{ sex }}</p>
+            <p><strong>Status:</strong> {{ status }}</p>
+            <p><strong>Location:</strong> {{ location }}</p>
+        </div>
+
+        <a href="/" class="back-link">Back to Form</a>
+    </div>
+</body>
+</html>

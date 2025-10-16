@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>Social Media Profile</h2>
+
+        <form action="/profile" method="POST">
+            <div class="row">
+                <label>First Name:</label>
+                <input type="text" name="firstname" required>
+
+                <label>Last Name:</label>
+                <input type="text" name="lastname" required>
+            </div>
+
+            <div class="row">
+                <label>Status:</label>
+                <input type="text" name="status" required>
+
+                <label>Sex:</label>
+                <div class="radio-group">
+                    <input type="radio" name="sex" value="Male"> Male
+                    <input type="radio" name="sex" value="Female"> Female
+                </div>
+            </div>
+
+            <div class="row single">
+                <label>Location:</label>
+                <input type="text" name="location" required>
+            </div>
+            <button type="submit">Create Profile</button>
+        </form>
+    </div>
+</body>
+</html>
